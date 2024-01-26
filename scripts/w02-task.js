@@ -18,43 +18,25 @@ const imageElement = document.querySelector("image");
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.innerHTML = `<strong>${currentYear}</strong>`;
 
-//imageElement.setAttribute("src", `${profilePicture}`);
-//imageElement.setAttribute("alt", `Profile image of ${fullName}`);
-
-
-
+/*
+imageElement.setAttribute("src", `${profilePicture}`);
+imageElement.setAttribute("alt", `Profile image of ${fullName}`);*/
 /* Step 5 - Array */
 
-var favFood = ['Asado','Milanesa'];
+var favFood = ['Asado', 'Milanesa', 'cheese cake', 'pizza', 'Ice cream', 'Empanadas', 'Choripan', 'Gnocchi'];
 
-foodElement.innerHTML += `<br>${favFood}`;
+foodElement.innerHTML = favFood.join(',');
 
-var newFood = ['Asado','Milanesa', 'cheese cake'];
-
-foodElement.innerHTML += `<br>${newFood}`;
-
-var newFood = ['Asado','Milanesa', 'cheese cake', 'pizza', ];
-
-foodElement.innerHTML += `<br>${newFood}`;
-
-var newFood = ['Asado','Milanesa', 'cheese cake', 'pizza', 'Ice cream'];
-
-foodElement.innerHTML += `<br>${newFood}`;
-
-var newFood = ['Asado','Milanesa', 'cheese cake', 'pizza', 'Ice cream', 'Empanadas'];
-
-foodElement.innerHTML += `<br>${newFood}`;
-
-var newFood = ['Asado','Milanesa', 'cheese cake', 'pizza', 'Ice cream', 'Empanadas', 'Choripan'];
-
-foodElement.innerHTML += `<br>${newFood}`;
-
-var newFood = ['Asado','Milanesa', 'cheese cake', 'pizza', 'Ice cream', 'Empanadas', 'Choripan', 'Gnocchi'];
-
-foodElement.innerHTML += `<br>${newFood}`;
+var newFood = "Tacos";
 
 favFood.push(newFood);
 
-console.log(favFood);
+foodElement.innerHTML += '<br>' + favFood.join(',');
 
+favFood.shift();
 
+foodElement.innerHTML += '<br>' + favFood.join(',');
+
+favFood.pop();
+
+foodElement.innerHTML += '<br>' + favFood.join(',');
