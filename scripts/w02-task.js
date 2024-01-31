@@ -12,15 +12,15 @@ let profilePicture = 'images/image-portal.png';
 const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-const imageElement = document.querySelector("image");
+const imageElement = document.querySelector("img");
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.innerHTML = `<strong>${currentYear}</strong>`;
 
-/*
+
 imageElement.setAttribute("src", `${profilePicture}`);
-imageElement.setAttribute("alt", `Profile image of ${fullName}`);*/
+imageElement.setAttribute("alt", `Profile image of ${fullName}`);
 /* Step 5 - Array */
 
 var favFood = ['Asado', 'Milanesa', 'cheese cake', 'pizza', 'Ice cream', 'Empanadas', 'Choripan', 'Gnocchi'];
